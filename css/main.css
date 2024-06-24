@@ -1,0 +1,32 @@
+@import url("./reset.css");
+
+:root {
+    --white: #ffffff;
+    --white-smoke: #fafafa;
+    --metallic-gold: #cfb991;
+    --metallic-gold-transparent: #cfb99166;
+    --blue-charcoal: #243746;
+    --outer-space: #1c2a39;
+    --russian-black: #040f1b;
+    --black: #000000;
+}
+
+/* Include the font-face rule for Archivo font */
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Use the Archivo font for the body */
+body {
+    font-family: 'Archivo', sans-serif;
+}
