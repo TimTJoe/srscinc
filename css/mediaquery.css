@@ -1,0 +1,8 @@
+/* Style for bigger displays like laptops and PCs */
+@media (min-width: 1440px) {}
+
+/* Style for tablets and smaller screens */
+@media (max-width: 1024px) {}
+
+/* Style for mobile screens */
+@media (max-width: 600px) {}

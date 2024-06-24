@@ -1,0 +1,36 @@
+button {
+    padding: var(--spacing-sm);
+    outline: 3px solid var(--white);
+    color: var(--white);
+    background-color: transparent;
+    border: unset;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+    font-weight: bolder;
+    text-transform: capitalize;
+    transition: background-color .3s ease;
+}
+
+button:hover {
+    background-color: var(--white-smoke);
+    color: var(--blue-charcoal);
+}
+
+button.primary {
+    background-color: var(--blue-charcoal);
+    outline-color: transparent;
+}
+
+button.primary:hover {
+    background-color: #1c2a39;
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: var(--spacing-xs);
+        font-weight: normal;
+        font-size: var(--font-size-sm);
+    }
+}
