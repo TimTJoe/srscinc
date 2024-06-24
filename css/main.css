@@ -1,3 +1,9 @@
+/* Style for tablets and smaller screens */
+@media (max-width: 1024px) {}
+
+/* Style for mobile screens */
+@media (max-width: 600px) {}
+
 /* Include the font-face rule for Archivo font */
 @font-face {
     font-family: 'Archivo';
@@ -93,4 +99,35 @@ h2 {
 p {
     font-size: var(--font-size-md);
     margin-bottom: var(--spacing-md);
+}
+
+/* buttons */
+
+button {
+    padding: 12px var(--spacing-md);
+    outline: 3px solid var(--white);
+    color: var(--white);
+    background-color: transparent;
+    border: unset;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+    font-weight: bolder;
+    text-transform: capitalize;
+    transition: all .3s ease;
+}
+
+button:hover {
+    background-color: var(--white-smoke);
+    color: var(--blue-charcoal);
+}
+
+button.primary {
+    background-color: var(--blue-charcoal);
+    outline-color: transparent;
+}
+
+button.primary:hover {
+    background-color: #1c2a39;
+    color: var(--white);
 }

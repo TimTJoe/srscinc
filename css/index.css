@@ -2,14 +2,35 @@ header {
     background-color: var(--russian-black);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
 }
 
+
 header nav ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
+    gap: var(--spacing-md);
+}
+
+
+
+nav li a {
+    color: var(--white-smoke);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 header img {
     width: 218px;
     height: 28px;
 }
+
+
+/* Style for tablets and smaller screens */
+@media (max-width: 1024px) {}
+
+/* Style for mobile screens */
+@media (max-width: 600px) {}
