@@ -1,0 +1,82 @@
+/* Hero section styles */
+.hero {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: absolute;
+    color: var(--white);
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    min-height: 50%;
+    transform: translateY(100%);
+    animation: slideIn 1s forwards;
+    text-shadow: 2px 2px #0000004b;
+}
+
+.hero-content p {
+    font-size: var(--font-size-lg);
+}
+.cta-buttons {
+    margin-top: var(--spacing-lg);
+}
+
+.cta-buttons > * + * {
+    margin-left: var(--spacing-md);
+}
+
+
+/* Animation keyframes */
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+    .hero-content {
+        height: 80%;
+    }
+    .hero-content h1{
+        font-size: var(--font-size-xl);
+    }
+    .hero-content p {
+        text-align: justify;
+
+    }
+}
+
+/* Style for bigger displays like laptops and PCs */
+@media (min-width: 1025px) {
+    .hero-content {
+        width: 768px;
+    }
+
+    .hero-content h1 {
+        line-height: 1.2;
+    }
+
+}

@@ -7,7 +7,6 @@ button {
     font-family: inherit;
     cursor: pointer;
     font-size: var(--font-size-lg);
-    font-weight: bolder;
     text-transform: capitalize;
     transition: background-color .3s ease;
 }
@@ -25,6 +24,22 @@ button.primary {
 button.primary:hover {
     background-color: #1c2a39;
     color: var(--white);
+}
+
+
+.link-btn {
+    display: inline-block;
+    color: var(--white);
+    padding: var(--spacing-sm);
+    text-decoration: none;
+}
+
+.link-btn:after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 2px solid var(--white);
+    font-size: var(--font-size-lg);
 }
 
 @media (max-width: 768px) {
