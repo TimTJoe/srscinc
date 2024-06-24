@@ -32,6 +32,7 @@ button.primary:hover {
     color: var(--white);
     padding: var(--spacing-sm);
     text-decoration: none;
+    font-weight: bold;
 }
 
 .link-btn:after {
@@ -40,6 +41,43 @@ button.primary:hover {
     width: 100%;
     border: 2px solid var(--white);
     font-size: var(--font-size-lg);
+}
+
+.link-btn.secondary {
+    color: var(--blue-charcoal);
+}
+
+.link-btn:after {
+    border-color: #1c2a39;
+}
+
+
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: var(--spacing-sm);
+    background-color: #01010ce0;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.prev-button {
+    left: 2px;
+}
+
+.next-button {
+    right: 2px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #01010cf5;
 }
 
 @media (max-width: 768px) {

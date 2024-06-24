@@ -1,0 +1,62 @@
+.courses-section {
+    padding: 20px;
+    background-color: var(--white);
+    padding-top: 6rem;
+}
+
+.courses-section header {
+    margin-bottom: 4rem;
+    color: var(--russian-black);
+}
+
+.courses-section header h2 {
+    line-height: 1.2;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.courses-section .tagline {
+    font-size: var(--font-size-lg);
+    width: 60%;
+}
+
+.cards-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    flex: 0 0 30%;
+    margin: 0 var(--spacing-lg);
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: var(--spacing-lg);
+}
+
+.card h3 {
+    font-size: var(--font-size-2xl);
+    margin-top: 10px;
+    color: var(--russian-black);
+}
+
+.card .description {
+    color: var(--outer-space);
+    font-size: var(--font-size-md);
+    line-height: 1.5;
+    margin: var(--spacing-lg) 0;
+}
+
+
