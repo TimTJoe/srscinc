@@ -56,15 +56,7 @@
     min-height: 100px;
 }
 
-.quick-contact-form button {
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-}
+
 
 @media (max-width: 768px) {
     .quick-contact-container {
@@ -82,6 +74,8 @@
 
     .quick-contact-form input,
     .quick-contact-form textarea {
+        display: block;
         font-size: 1em;
+        min-width: 400px;
     }
 }
