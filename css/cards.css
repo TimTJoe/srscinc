@@ -36,6 +36,7 @@
     flex: 0 0 30%;
     margin: 0 var(--spacing-lg);
     background-color: #fff;
+    overflow: hidden;
 }
 
 .card img {
@@ -44,6 +45,11 @@
     max-height: 300px;
     object-fit: cover;
     margin-bottom: var(--spacing-lg);
+    transition: transform .3s ease-out;
+}
+
+.card:hover img {
+    transform: scale(1.1);
 }
 
 .card h3 {
@@ -60,3 +66,19 @@
 }
 
 
+@media (max-width: 768px) {
+    .courses-section header h2 {
+        font-size: 2rem;
+    }
+
+    .courses-section .tagline {
+        font-size: var(--font-size-md);
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .card {
+        flex-basis: 95%;
+    }
+}

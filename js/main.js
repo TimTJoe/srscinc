@@ -7,7 +7,7 @@ const cardsWrapper = document.querySelector(".cards-wrapper");
 const cardWidth = document.querySelector(".card").offsetWidth;
 const cards = document.querySelectorAll(".card");
 const numCards = cards.length;
-const visibleCards = 2; // Number of cards visible at a time
+const visibleCards = 1; // Number of cards visible at a time
 
 function slideNext() {
   if (currentIndex < numCards - visibleCards) {
@@ -22,4 +22,3 @@ function slidePrev() {
     cardsWrapper.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
   }
 }
-
