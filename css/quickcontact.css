@@ -1,0 +1,87 @@
+/* Quick Contact Section */
+.quick-contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.quick-contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.quick-contact-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.quick-contact-text h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.quick-contact-text p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.quick-contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.quick-contact-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.quick-contact-form input,
+.quick-contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.quick-contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.quick-contact-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .quick-contact-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .quick-contact-text {
+        padding: 0 0 15px 0;
+    }
+
+    .quick-contact-form {
+        padding: 0;
+    }
+
+    .quick-contact-form input,
+    .quick-contact-form textarea {
+        font-size: 1em;
+    }
+}

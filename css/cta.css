@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    /* padding: 20px; */
     background-color: #f5f5f5;
     margin-top: 4rem;
 }
@@ -23,7 +23,7 @@
 }
 
 .cta-headline {
-    font-size: 2em;
+    font-size: var(--font-size-5xl);
     margin-bottom: 10px;
 }
 

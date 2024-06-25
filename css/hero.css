@@ -61,11 +61,10 @@
         height: 80%;
     }
     .hero-content h1{
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-2xl);
     }
     .hero-content p {
-        text-align: justify;
-
+        text-align: center;
     }
 }
 
